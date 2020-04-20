@@ -81,30 +81,33 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-
-Object(_message__WEBPACK_IMPORTED_MODULE_0__["messageDOM"])('działam po boundlingu w przeglądarce')
-Object(_message__WEBPACK_IMPORTED_MODULE_0__["message"])('działam po boundlingu')
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./message */ \"./src/message.js\");\n\r\nObject(_message__WEBPACK_IMPORTED_MODULE_0__[\"messageDOM\"])('działam po boundlingu w przeglądarce')\r\nObject(_message__WEBPACK_IMPORTED_MODULE_0__[\"message\"])('działam po boundlingu')\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
-/* 1 */
+
+/***/ "./src/message.js":
+/*!************************!*\
+  !*** ./src/message.js ***!
+  \************************/
+/*! exports provided: message, messageDOM */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "message", function() { return message; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "messageDOM", function() { return messageDOM; });
-const message = (info) => console.log(info);
-const messageDOM = (info) => document.body.textContent = info;
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"message\", function() { return message; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"messageDOM\", function() { return messageDOM; });\nconst message = (info) => console.log(info);\r\nconst messageDOM = (info) => document.body.textContent = info;\n\n//# sourceURL=webpack:///./src/message.js?");
 
 /***/ })
-/******/ ]);
+
+/******/ });
