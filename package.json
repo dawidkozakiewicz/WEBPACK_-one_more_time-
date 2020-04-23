@@ -1,25 +1,17 @@
 {
-  "name": "WEBPACK",
+  "name": "webpack-project",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
-    "prod": "webpack --config webpack.config.2.js",
-    "dev": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dawidkozakiewicz/WEBPACK_-one_more_time-.git"
+    "prod": "webpack --config ./config/webpack.config.prod.js",
+    "dev": "webpack --config ./config/webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dawidkozakiewicz/WEBPACK_-one_more_time-/issues"
-  },
-  "homepage": "https://github.com/dawidkozakiewicz/WEBPACK_-one_more_time-#readme",
   "devDependencies": {
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
   }
 }
