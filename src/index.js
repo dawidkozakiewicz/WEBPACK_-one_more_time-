@@ -1,4 +1,4 @@
 import { message, messageDOM } from './message';
-
-message("działam po bundlingu!");
-messageDOM("działa po bundlingu w przeglądarce");
+import text from './text.txt'
+message(text);
+messageDOM(text);
