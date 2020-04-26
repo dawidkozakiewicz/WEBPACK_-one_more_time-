@@ -1,4 +1,5 @@
 import { message, messageDOM } from './message';
-import text from './text.txt'
-message(text);
-messageDOM(text);
+import info from './title.txt';
+
+message(info);
+messageDOM(info);
