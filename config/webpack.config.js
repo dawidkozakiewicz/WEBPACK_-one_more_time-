@@ -22,13 +22,17 @@ module.exports = {
       {
         test: /\.txt$/,
         use: 'raw-loader'
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: "src/template.html",
+      template: "src/templates/template.html",
       title: "nowa aplikacja"
     }),
 
