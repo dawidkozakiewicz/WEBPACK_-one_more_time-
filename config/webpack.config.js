@@ -22,14 +22,18 @@ module.exports = {
         test: /\.txt$/,
         use: 'raw-loader'
       },
-      // {
-      //   test: /\.css$/,
-      //   use: ['style-loader', 'css-loader']
-      // },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
       {
         test: /\.(sass|scss)$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
-      }
+      },
+      {
+        test: /\.(jpg|png|svg|gif|jpeg)$/,
+        use: 'file-loader',
+      },
     ]
   },
   plugins: [

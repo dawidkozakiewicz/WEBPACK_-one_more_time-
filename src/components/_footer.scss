@@ -3,7 +3,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  color: $bgcolor;
+  background-color: $bgcolor;
+  background-image: url('../images/photo.jpg');
+  color: black;
   height: 80px;
 }

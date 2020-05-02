@@ -25,7 +25,15 @@ module.exports = {
       {
         test: /\.(sass|scss)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-      }
+      },
+      {
+        test: /\.(jpg|png|svg|gif|jpeg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name][contenthash:6].[ext]',
+          outputPath: 'images',
+        }
+      },
     ]
   },
   plugins: [
@@ -35,7 +43,7 @@ module.exports = {
       title: "nowa aplikacja"
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/[name]-[contenthash].css'
+      filename: '[name]-[contenthash].css'
     })
   ]
 }
